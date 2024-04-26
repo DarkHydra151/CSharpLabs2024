@@ -1,0 +1,51 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введіть довжини трьох сторін трикутника:");
+
+        double side1, side2, side3;
+        Console.Write("Сторона 1: ");
+        side1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Сторона 2: ");
+        side2 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Сторона 3: ");
+        side3 = Convert.ToDouble(Console.ReadLine());
+
+        if (side1 <= 0 || side2 <= 0 || side3 <= 0)
+        {
+            Console.WriteLine("Помилка: Довжина сторони не може бути від'ємною або рівною нулю.");
+            return;
+        }
+
+        if (!IsTriangle(side1, side2, side3))
+        {
+            Console.WriteLine("Помилка: Такий трикутник не існує.");
+            return;
+        }
+
+        double perimeter = side1 + side2 + side3;
+
+        double s = perimeter / 2;
+        double area = Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+        string triangleType;
+        if (side1 == side2 && side2 == side3)
+            triangleType = "рівносторонній";
+        else if (side1 == side2 || side1 == side3 || side2 == side3)
+            triangleType = "рівнобедрений";
+        else
+            triangleType = "різносторонній";
+
+        Console.WriteLine("Периметр трикутника: " + perimeter);
+        Console.WriteLine("Площа трикутника: " + area);
+        Console.WriteLine("Трикутник є " + triangleType + ".");
+    }
+
+    static bool IsTriangle(double a, double b, double c)
+    {
+        return a + b > c && a + c > b && b + c > a;
+    }
+}

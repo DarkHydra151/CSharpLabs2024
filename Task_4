@@ -1,0 +1,41 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] X = new int[28];
+        Random rand = new Random();
+        for (int i = 0; i < 28; i++)
+        {
+            X[i] = rand.Next(-50, 51); 
+        }
+        int M = rand.Next(1, 51); 
+
+        int[] Y = new int[28];
+        int indexY = 0;
+        foreach (int num in X)
+        {
+            if (Math.Abs(num) > M)
+            {
+                Y[indexY] = num;
+                indexY++;
+            }
+        }
+
+        Console.WriteLine("Число М: " + M);
+        Console.WriteLine("Масив X:");
+        PrintArray(X);
+        Console.WriteLine("Масив Y (елементи більше по модулю за М):");
+        PrintArray(Y);
+    }
+
+    static void PrintArray(int[] arr)
+    {
+        foreach (int num in arr)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
+    }
+}

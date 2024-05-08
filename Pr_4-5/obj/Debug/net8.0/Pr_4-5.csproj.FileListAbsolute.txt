@@ -1,0 +1,14 @@
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.GeneratedMSBuildEditorConfig.editorconfig
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.AssemblyInfoInputs.cache
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.AssemblyInfo.cs
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.csproj.CoreCompileInputs.cache
+C:\IT\С#\Pr_4-5\bin\Debug\net8.0\Pr_4-5.exe
+C:\IT\С#\Pr_4-5\bin\Debug\net8.0\Pr_4-5.deps.json
+C:\IT\С#\Pr_4-5\bin\Debug\net8.0\Pr_4-5.runtimeconfig.json
+C:\IT\С#\Pr_4-5\bin\Debug\net8.0\Pr_4-5.dll
+C:\IT\С#\Pr_4-5\bin\Debug\net8.0\Pr_4-5.pdb
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.dll
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\refint\Pr_4-5.dll
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.pdb
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\Pr_4-5.genruntimeconfig.cache
+C:\IT\С#\Pr_4-5\obj\Debug\net8.0\ref\Pr_4-5.dll
